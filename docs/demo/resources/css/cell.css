@@ -1,0 +1,56 @@
+/* widht,height are setted by js */
+
+.highlighter {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(80, 80, 80);
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: absolute;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+/* widht,height,font-site,padding are setted by js */
+
+.cell {
+    border: 1px solid rgb(80, 80, 80);
+    font-family: 'Courier New', Courier, monospace;
+    text-rendering: optimizelegibility;
+    color: white;
+    /* color: transparent; */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: pre;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.cell[data-display="false"] {
+    color: transparent;
+}
+
+.cell.traversable {
+    background-color: rgb(70, 70, 70);
+}
+
+.cell.target {
+    background-color: hsl(210, 100%, 50%);
+}
+
+.cell.start {
+    background-color: hsl(130, 100%, 50%);
+    /* color: black; */
+    color: transparent;
+}
+
+.cell.checked {
+    background-color: hsl(30, 100%, 50%);
+    color: black;
+    /* color: transparent; */
+}
+
+.cell.blocked {
+    background-color: rgb(100, 100, 100);
+}

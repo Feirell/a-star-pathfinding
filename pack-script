@@ -1,0 +1,8 @@
+rm -r ./docs/demo/
+
+mkdir -p ./docs/demo/resources/
+mkdir -p ./docs/demo/node_modules/de-feirell-common/js/
+
+cp index.html ./docs/demo/
+cp -r ./resources/* ./docs/demo/resources/
+cp -r ./node_modules/de-feirell-common/js/* ./docs/demo/node_modules/de-feirell-common/js/
