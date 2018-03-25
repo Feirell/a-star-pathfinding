@@ -1,0 +1,15 @@
+{
+  "name": "a-star-pathfinding-illistration",
+  "version": "0.4.0",
+  "description": "This is a project to visualize the progression of the A* Pathfinding Algorithm.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-doc": "jsdoc --configure .jsdoc.json"
+  },
+  "author": "Florian Völker <Neirolf2030@web.de> (http://blog.feirell.de)",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "de-feirell-common": "git+https://github.com/feirell/common.git",
+    "minami": "^1.2.3"
+  }
+}

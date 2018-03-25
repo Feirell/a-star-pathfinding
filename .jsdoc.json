@@ -1,0 +1,22 @@
+{
+    "plugins": ["plugins/markdown"],
+    "source": {
+        "include": [
+            "./node_modules/de-feirell-common/js/decimal-round.js",
+            "./node_modules/de-feirell-common/js/area.js",
+            "./node_modules/de-feirell-common/js/util.js",
+            "./node_modules/de-feirell-common/js/event-manager.js",
+            "./node_modules/de-feirell-common/js/area-group.js",
+            "./resources/scripts/",
+            "package.json",
+            "README.md"
+        ]
+    },
+    "opts": {
+        "destination": "./docs/",
+        "encoding": "utf8",
+        "private": true,
+        "recurse": true,
+        "template": "./node_modules/minami"
+    }
+}

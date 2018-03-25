@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>resources/scripts/cell.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Area.html">Area</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area.html#.assumFromTwoDArray">assumFromTwoDArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area.html#contains">contains</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area.html#iterator">iterator</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area.html#toString">toString</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="AreaGroup.html">AreaGroup</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="AreaGroup.html#contains">contains</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="AreaGroup.html#iterator">iterator</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="AreaGroup.html#toString">toString</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Area-AreaIterator.html">AreaIterator</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area-AreaIterator.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area-AreaIterator.html#hasNext">hasNext</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Area-AreaIterator.html#next">next</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Cell.html">Cell</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Cell.html#getPathOfCell">getPathOfCell</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Cell.html#registerDisplayElementForCell">registerDisplayElementForCell</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="EventManager.html">EventManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="EventManager.html#addEventListener">addEventListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="EventManager.html#dispatchEvent">dispatchEvent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="EventManager.html#removeEventListener">removeEventListener</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Grid.html">Grid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#appendPossibleCells">appendPossibleCells</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#calcHCell">calcHCell</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#getSorrundingCells">getSorrundingCells</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#resetPathfinding">resetPathfinding</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Grid.html#step">step</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PathfinderVisualization.html">PathfinderVisualization</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PathfinderVisualization.html#reset">reset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PathfinderVisualization.html#showInDetailView">showInDetailView</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Table.html">Table</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Table.html#getContainer">getContainer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Table.html#getContainer">getContainer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Table.html#randomizeBlocked">randomizeBlocked</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Table.html#randomizeStartTarget">randomizeStartTarget</a></span></li><li class="nav-heading">Events</li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:comingfromchanged">comingfromchanged</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:displaychange">displaychange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:gchange">gchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:hchange">hchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:typechange">typechange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:xchange">xchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Cell.html#event:ychange">ychange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:addcell">addcell</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:canwalkdiagonalchange">canwalkdiagonalchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:heightchange">heightchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:removecell">removecell</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:resetpathfinding">resetpathfinding</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:startchange">startchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:steppingcostchange">steppingcostchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:targetchange">targetchange</a></span></li><li class="nav-heading"><span class="nav-item-type type-event">E</span><span class="nav-item-name"><a href="Grid.html#event:widthchange">widthchange</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#floatToInt">floatToInt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#getTypeOf">getTypeOf</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#makeEventManager">makeEventManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#now">now</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">resources/scripts/cell.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>'use strict';
+
+/**
+ * @typedef valueChangeEvent
+ * @property {any} old
+ * @property {any} new
+ */
+
+/**
+ * Cell is one entitiy of the Grid.
+ * 
+ * @class
+ * @param {number} xPos x position in the grid
+ * @param {number} yPos y position in the grid
+ */
+function Cell(xPos, yPos) {
+    Object.makeEventManager(this, ['typechange', 'xchange', 'ychange', 'hchange', 'gchange', 'displaychange', 'comingfromchanged']);
+
+    let type, x, y, hValue, gValue, display, comingFrom;
+    const types = ['checked', 'traversable', 'blocked', 'start', 'target'];
+    const typeAsString = '[' + types.map((v) => '\'' + v + '\'').join(',') + ']';
+
+    Object.defineProperties(this, {
+        /**
+         * The type of the cell is one of ['checked', 'traversable', 'blocked', 'start', 'target'], defaults to 'traversable'
+         * @fires Cell#typechange
+         * @member {'checked'|'traversable'|'blocked'|'start'|'target'} Cell#type
+         */
+        type: {
+            set: (v) => {
+                if (types.indexOf(v) == -1)
+                    throw 'type needs to be on of ' + typeAsString + ' was: ' + v;
+
+                if (type != v) {
+                    let old = type;
+                    type = v;
+
+                    /**
+                     * {@link Cell#type} changed
+                     * 
+                     * @event Cell#typechange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('typechange', {
+                        old: old,
+                        new: type
+                    });
+                }
+            },
+            get: () => type
+        },
+        /**
+         * The type x coordinate of the cell
+         * @fires Cell#xchange
+         * @member {number} Cell#x
+         */
+        x: {
+            set: (v) => {
+                let val = parseInt(v);
+                if (val != x) {
+                    let old = x;
+                    x = val;
+
+                    /**
+                     * {@link Cell#x} changed
+                     * 
+                     * @event Cell#xchange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('xchange', {
+                        old: old,
+                        new: x
+                    });
+                }
+            },
+            get: () => x
+        },
+        /**
+         * The type y coordinate of the cell
+         * @fires Cell#ychange
+         * @member {number} Cell#y
+         */
+        y: {
+            set: (v) => {
+                let val = parseInt(v);
+                if (val != y) {
+                    let old = y;
+                    y = val;
+
+                    /**
+                     * {@link Cell#y} changed
+                     * 
+                     * @event Cell#ychange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('ychange', {
+                        old: old,
+                        new: y
+                    });
+                }
+            },
+            get: () => y
+        },
+        /**
+         * The heuristic value for this cell
+         * @fires Cell#hchange
+         * @member {number?} Cell#hValue
+         */
+        hValue: {
+            set: (v) => {
+                let val = parseFloat(v);
+                if (val != hValue) {
+                    let old = hValue;
+                    hValue = val;
+
+                    /**
+                     * {@link Cell#hValue} changed
+                     * 
+                     * @event Cell#hchange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('hchange', {
+                        old: old,
+                        new: hValue
+                    });
+                }
+            },
+            get: () => hValue
+        },
+        /**
+         * The gross value for this cell (travelling cost to this cell from the start)
+         * @fires Cell#gchange
+         * @fires Cell#displaychange
+         * @member {number?} Cell#gValue
+         */
+        gValue: {
+            set: (v) => {
+                let val = parseFloat(v);
+                if (val != gValue) {
+                    let old = gValue;
+                    gValue = val;
+                    this.display = isFinite(gValue);
+
+                    /**
+                     * {@link Cell#gValue} changed
+                     * 
+                     * @event Cell#gchange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('gchange', {
+                        old: old,
+                        new: gValue
+                    });
+                }
+            },
+            get: () => gValue
+        },
+        /**
+         * Cell#hValue + Cell#gValue
+         * @member {number?} Cell#fValue
+         */
+        fValue: {
+            get: () => this.gValue + this.hValue
+        },
+        /**
+         * if this cell / the values should be displayed, is only used as a flag
+         * @fires Cell#displaychange
+         * @member {boolean} Cell#display
+         */
+        display: {
+            set: (v) => {
+                if ((v == true || v == false) &amp;&amp; v != display) {
+                    let old = display;
+                    display = v;
+                    /**
+                     * {@link Cell#display} changed
+                     * 
+                     * @event Cell#displaychange
+                     * @type {valueChangeEvent}
+                     */
+                    this.dispatchEvent('displaychange', {
+                        old: old,
+                        new: display
+                    });
+                }
+            },
+            get: () => display
+        },
+        /**
+         * Contains the cell which was used to reach this cell with the a star algorythem
+         * @fires Cell#comingfromchanged
+         * @member {Cell?} Cell#comingFrom
+         */
+        comingFrom: {
+            set: (v) => {
+                if (v === undefined || !(v instanceof Cell))
+                    throw 'can only come from Cell'
+
+                // TODO maybe erase g value if coming from is removed
+                let old = comingFrom;
+                comingFrom = v;
+
+                /**
+                 * {@link Cell#comingFrom} changed
+                 * 
+                 * @event Cell#comingfromchanged
+                 * @type {valueChangeEvent}
+                 */
+                this.dispatchEvent('gchange', {
+                    old: old,
+                    new: v
+                });
+            },
+            get: () => comingFrom
+        }
+    })
+
+
+    this.type = 'traversable';
+    this.display = false;
+    this.x = xPos;
+    this.y = yPos;
+}
+
+/**
+ * Gets the path, the cells which were used to reach this cell, of this checked cell.
+ * @returns {Cell[]?} the cells which were used starting with this cell, returns undefined if this cell is not of type 'checked'
+ */
+Cell.prototype.getPathOfCell = function getPathOfCell() {
+    if (this.type != 'checked')
+        return undefined;
+
+    let ret = [];
+    ret[0] = this;
+
+    let c = this;
+    while (c.comingFrom != undefined) {
+        if (c.comingFrom.type != 'checked')
+            throw 'the comingFrom cell ' + c.comingFrom + ' of ' + c + ' was not of type \'checked\'';
+
+        ret[ret.length] = c = c.comingFrom;
+    }
+}
+
+/**
+ * This methode is useful if you want to bind the events emited by the Cell to a HTMLElement which can be used to display it.
+ * @param {HTMLElement} element 
+ */
+Cell.prototype.registerDisplayElementForCell = function registerDisplayElementForCell(element) {
+    element.className = 'cell ' + this.type;
+    this.addEventListener('typechange', ev => {
+        element.className = 'cell ' + this.type;
+    });
+
+    element.setAttribute('data-display', '' + this.display);
+    this.addEventListener('displaychange', ev => {
+        element.setAttribute('data-display', '' + this.display);
+    });
+
+    const textContentChange = (event) => {
+        element.textContent = `h: ${Math.round10(this.hValue,-1)}\ng: ${isFinite(this.gValue)? +Math.round10(this.gValue,-1) : '-'}\nf: ${isFinite(this.fValue)? Math.round10(this.fValue,-1) : '-'}`;
+    }
+    textContentChange();
+
+    // this.addEventListener('xchange', textContentChange);
+    // this.addEventListener('ychange', textContentChange);
+
+    this.addEventListener('hchange', textContentChange);
+    this.addEventListener('gchange', textContentChange);
+
+}
+
+
+// generates toString for Cell
+{
+    let names = Object.getOwnPropertyNames(new Cell(0, 0)).filter((v) => ['addEventListener', 'dispatchEvent', 'removeEventListener', 'events'].indexOf(v) == -1);
+    let complStr = ''
+
+    for (let i = 0; i &lt; names.length; i++) {
+        complStr += names[i] + ": '+this." + names[i] + (i != names.length - 1 ? "+', " : "+'");
+    }
+
+    complStr = "Cell.prototype.toString = function toString() { return 'Cell{" + complStr + "}'; }";
+    eval(complStr);
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Mar 25 2018 21:36:51 GMT+0200 (Mitteleuropäische Sommerzeit) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
