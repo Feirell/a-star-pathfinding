@@ -4,6 +4,7 @@
 <a class="major-nav-item" target="_blank" href="https://feirell.github.io/a-star-pathfinding/a-star-pathfinding-illistration/0.4.0/">Documentation</a>
 <a class="major-nav-item" target="_blank" href="https://github.com/Feirell/a-star-pathfinding/">GitHub Repository</a>
 <a class="major-nav-item" target="_blank" href="https://feirell.github.io/a-star-pathfinding/demo/">Demo</a>
+
 The A\* Pathfinding Algorithm (here A\*) is a pathfinding algorithm which is highly efficient and quite easy to implement. It is not able to handle dynamic environments but handles static situations with ease.
 
 This project is a visualization of this algorithm and is meant to explain its progression and how it handles different problems.
